@@ -1,20 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { SignComponent } from './sign/sign.component';
 
-
-
-const authRoutes: Routes = [
-  {path: 'sign', component: SignComponent},
-]
+const authRoutes: Routes = [{ path: 'sign', component: SignComponent }];
 
 @NgModule({
-  declarations: [
-    SignComponent
-  ],
+  declarations: [SignComponent],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    RouterModule.forChild(authRoutes), // Use 'forChild' to configure child routes
+  ],
 })
-export class AuthModule { }
+export class AuthModule {}
