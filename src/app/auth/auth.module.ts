@@ -5,7 +5,9 @@ import { SignComponent } from './sign/sign.component';
 import { LoginComponent } from './login/login.component';
 
 const authRoutes: Routes = [
-  { path: 'sign', component: SignComponent },{path: 'login', component: LoginComponent}];
+  { path: 'sign', component: SignComponent },
+  { path: 'login', component: LoginComponent },
+];
 
 @NgModule({
   declarations: [SignComponent, LoginComponent],
