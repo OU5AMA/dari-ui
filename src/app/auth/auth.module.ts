@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { SignComponent } from './sign/sign.component';
@@ -15,6 +16,7 @@ const authRoutes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(authRoutes), // Use 'forChild' to configure child routes
+    ReactiveFormsModule,
   ],
 })
 export class AuthModule {}
