@@ -1,12 +1,7 @@
 <!-- login.component.html -->
 
-<form [formGroup]="loginForm" (ngSubmit)="onLogin">
-    <!-- username -->
-    <label for="username">Username:</label>
-    <input type="text" formControlName="username" id="username">
-    <!-- passowrd -->
-    <label for="password">Password:</label>
-    <input type="password" formControlName="password" id="password">
-    <!-- btn -->
-    <button type="submit">Log In</button>
+<form [formGroup]="loginForm" (ngSubmit)="onLogin" class="max-w-md mx-auto bg-gray-900 p-8 rounded shadow-lg">
+    <input type="text" formControlName="username" id="username" placeholder="Username" class="w-full p-3 bg-gray-800 text-white placehoder-gray-400 border border-gray-700 rounded mb-4">
+    <input type="password" formControlName="password" id="password" placeholder="Password" class="w-full p-3 bg-gray-800 text-white placeholder-gray-400 border border-gray-700 rounded mb-4">
+    <button type="submit" class="bg-orange-500 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded">Log In</button>
 </form>
