@@ -3,5 +3,10 @@
 <form [formGroup]="loginForm" (ngSubmit)="onLogin" class="max-w-md mx-auto bg-gray-900 p-8 rounded shadow-lg">
     <input type="text" formControlName="username" id="username" placeholder="Username" class="w-full p-3 bg-gray-800 text-white placehoder-gray-400 border border-gray-700 rounded mb-4">
     <input type="password" formControlName="password" id="password" placeholder="Password" class="w-full p-3 bg-gray-800 text-white placeholder-gray-400 border border-gray-700 rounded mb-4">
+    <!-- Remember Me Checkbox -->
+    <div class="flex items-center mb-4">
+        <input type="checkbox" formControlName="rememberMe" id="rememberMe" class="text-orange-500 mr-2">
+        <label for="rememberMe" class="text-white text-sm">Remember Me</label>
+    </div>
     <button type="submit" class="bg-orange-500 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded">Log In</button>
 </form>
