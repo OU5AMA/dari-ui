@@ -1,11 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
-
-interface SignData {
-  username: string;
-  password: string;
-  email: string;
-}
 
 @Component({
   selector: 'app-sign',
@@ -13,5 +7,4 @@ interface SignData {
   styleUrls: ['./sign.component.scss']
 })
 export class SignComponent {
-  @Input() data: SignData;
 }
