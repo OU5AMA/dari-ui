@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 
 interface SignData {
@@ -13,5 +13,5 @@ interface SignData {
   styleUrls: ['./sign.component.scss']
 })
 export class SignComponent {
-
+  @Input() data: SignData;
 }
