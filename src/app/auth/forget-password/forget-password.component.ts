@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+interface ForgetPasswordData{
+  email: string;
+}
 
 @Component({
   selector: 'app-forget-password',
@@ -6,5 +10,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./forget-password.component.scss']
 })
 export class ForgetPasswordComponent {
-
+  @Input() data: ForgetPasswordData;
 }
