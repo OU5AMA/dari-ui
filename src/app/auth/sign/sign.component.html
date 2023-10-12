@@ -1,1 +1,13 @@
-<p>sign works!</p>
+<form [formGroup]="signForm" (ngSubmit)="onSignup()">
+    <!-- username -->
+    <label for="username">Username:</label>
+    <input type="text" formControlName="username" id="username">
+    <!-- password -->
+    <label for="password">Password:</label>
+    <input type="password" formControlName="password" id="password">
+    <!-- email -->
+    <label for="email">Email:</label>
+    <input type="email" formControlName="email" id="email">
+    <!-- sign btn -->
+    <button type="submit">Sign Up</button>
+</form>
